@@ -1,0 +1,20 @@
+<div class="login">
+    <h1>Predict tomorrow's sentiment</h1>
+    <h3>Submit todays news headings/kwords</h3>
+
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="x_input" placeholder="Paste here" required="required" />
+
+        <button type="submit" class="btn">Predict</button>
+    </form>
+
+    <br>
+    <br>
+
+    {{ prediction_text }}
+    <br>
+    <br>
+    <!-- <img src="plot.png" > -->
+    <!-- <img src={{ figure }} alt="plot"> -->
+
+</div>
